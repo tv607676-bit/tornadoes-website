@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tornadoes Academy</title>
+    <link rel="shortcut icon" href="assets/images/Tornadoes-logo.png" type="image/x-icon">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo Section -->
+            <a href="/" class="logo">
+                <img src="assets/images/Tornadoes-logo.png" alt="Tornadoes Academy Logo" class="logo-img">
+                <span class="logo-text">Tornadoes Academy</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="nav-menu">
+                <a href="/" class="nav-link active">Home</a>
+                <a href="/admission.html" class="nav-link">Admission</a>
+                <a href="/trainers.html" class="nav-link">Trainers</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Header Right Section -->
+            <div class="header-right">
+                <!-- Notification Bell -->
+                <div class="notification-wrapper">
+                    <button class="notification-btn" id="notificationBtn" aria-label="Notifications">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                        <span class="notification-dot" id="notificationDot"></span>
+                    </button>
+
+                    <!-- Popup Menu -->
+                    <div class="notification-popup" id="notificationPopup">
+                        <div class="popup-header">
+                            <div class="popup-title-wrapper">
+                                <div class="popup-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                </div>
+                                <div class="popup-header-text">
+                                    <h3 class="popup-title">New Document Available</h3>
+                                    <p class="popup-subtitle">Click download to save this document</p>
+                                </div>
+                            </div>
+                            <button class="popup-close" id="popupClose" aria-label="Close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </button>
+                        </div>
+                        <div class="popup-body" id="notificationList">
+                            <div class="notification-loading">Loading notifications...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    </main>
+    <main>
+        <section class="page-banner gallery-banner" style="background: linear-gradient(90deg, #3b82f6, #8b5cf6);">
+            <div class="page-banner-container">
+                <h1 class="page-banner-title">Our Gallery</h1>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="gallery-container">
+                <div class="gallery-grid">
+                    <!-- Cards -->
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/ABHIINAND  SSC GD CISF.jpeg" alt="ABHIINAND">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>ABHIINAND</h3>
+                            <p>SSC GD CISF</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/ADITH  PM.jpeg" alt="ADITH PM">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>ADITH PM</h3>
+                            <p>Student</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/AMAL K (Arty).jpeg" alt="AMAL K">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>AMAL K</h3>
+                            <p>Arty</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/ANIRUDH  P{ASSAM RIF}.jpeg" alt="ANIRUDH P">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>ANIRUDH P</h3>
+                            <p>ASSAM RIF</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/ANUGRAH.  A(Indian Navy).jpeg" alt="ANUGRAH. A">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>ANUGRAH. A</h3>
+                            <p>Indian Navy</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/ANURAJ N {CISF}.jpeg" alt="ANURAJ N">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>ANURAJ N</h3>
+                            <p>CISF</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/Abhijith Shaji (MEG).jpeg" alt="Abhijith Shaji">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Abhijith Shaji</h3>
+                            <p>MEG</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/Abhinav C (MRC).jpeg" alt="Abhinav C">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Abhinav C</h3>
+                            <p>MRC</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/Adhithyan K (MEG).jpeg" alt="Adhithyan K">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Adhithyan K</h3>
+                            <p>MEG</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/Adhithyan P  (MEG).jpeg" alt="Adhithyan P">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Adhithyan P</h3>
+                            <p>MEG</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/Akshay    ( Signal).jpeg" alt="Akshay">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Akshay</h3>
+                            <p>Signal</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/Alan Ashok.jpeg" alt="Alan Ashok">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Alan Ashok</h3>
+                            <p>Student</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/Anugrah.jpeg" alt="Anugrah">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Anugrah</h3>
+                            <p>Student</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/Athul Sajith N(Indian army).jpeg" alt="Athul Sajith N">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Athul Sajith N</h3>
+                            <p>Indian army</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/Devadhath P (EME).jpeg" alt="Devadhath P">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Devadhath P</h3>
+                            <p>EME</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/Flemin J Shyam.jpeg" alt="Flemin J Shyam">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Flemin J Shyam</h3>
+                            <p>Student</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/Gogul M   (MEG).jpeg" alt="Gogul M">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Gogul M</h3>
+                            <p>MEG</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/JIJITH SHAJI  VV (CISF).jpeg" alt="JIJITH SHAJI VV">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>JIJITH SHAJI VV</h3>
+                            <p>CISF</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/NITHIN THILAK{BSF}.jpeg" alt="NITHIN THILAK">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>NITHIN THILAK</h3>
+                            <p>BSF</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/Nidhin Rag P   (EME).jpeg" alt="Nidhin Rag P">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Nidhin Rag P</h3>
+                            <p>EME</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/RANEESH T{CISF}.jpeg" alt="RANEESH T">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>RANEESH T</h3>
+                            <p>CISF</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/RIJIL RAJ M V (SUB INSPECTOR OF POLICE).jpeg" alt="RIJIL RAJ M V">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>RIJIL RAJ M V</h3>
+                            <p>SUB INSPECTOR OF POLICE</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/SOORYJITH K.jpeg" alt="SOORYJITH K">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>SOORYJITH K</h3>
+                            <p>Student</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/Sayanth Krishnan KP (EME).jpeg" alt="Sayanth Krishnan KP">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Sayanth Krishnan KP</h3>
+                            <p>EME</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/V AKASH(CRPF).jpeg" alt="V AKASH">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>V AKASH</h3>
+                            <p>CRPF</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/VIDHU  K(Territorial Army).jpeg" alt="VIDHU K">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>VIDHU K</h3>
+                            <p>Territorial Army</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="assets/images/students/student 1.jpeg" alt="Student 1">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Student 1</h3>
+                            <p>Student</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Branding -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo footer-logo">
+                        <img src="assets/images/Tornadoes-logo.png" alt="Tornadoes Academy Logo" class="logo-img">
+                        <span class="logo-text">Tornadoes Academy</span>
+                    </a>
+                    <p class="footer-desc">Empowering students to achieve excellence through personalized education and expert guidance.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/admission.html">Admission</a></li>
+                        <li><a href="/trainers.html">Trainers</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul>
+                        <li>Email: <a href="mailto:tornadoesacademy@gmail.com">tornadoesacademy@gmail.com</a></li>
+                        <li>Phone: <a href="tel:+919924895698">9924895698</a>, <a href="tel:+917076453878">7076453878</a>, <a href="tel:+919541261593">9541261593</a></li>
+                        <li>Address: Tornadoes Academy, 3rd Floor, Alfalah Complx, Netaji Road, Near public library, Kannur, Pin - 670001.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Divider -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tornadoes Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript for animations -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
