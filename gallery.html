@@ -11,6 +11,14 @@
 </head>
 <body>
     <header class="header">
+        <!-- News Ticker -->
+        <div class="news-ticker" id="newsTicker">
+            <div class="ticker-wrap">
+                <div class="ticker-move" id="tickerMove">
+                    <!-- News items populated by JS -->
+                </div>
+            </div>
+        </div>
         <div class="header-container">
             <!-- Logo Section -->
             <a href="/" class="logo">
@@ -75,8 +83,15 @@
         <!-- Gallery Section -->
         <section class="gallery-section">
             <div class="gallery-container">
-                <div class="gallery-grid">
-                    <!-- Cards -->
+                <div class="gallery-tabs">
+                    <button class="tab-btn active" data-tab="achievers">ACHIEVERS</button>
+                    <button class="tab-btn" data-tab="media">MEDIA & NEWS</button>
+                </div>
+
+                <!-- Achievers Tab Content -->
+                <div class="tab-content active" id="achievers">
+                    <div class="gallery-grid">
+                        <!-- Cards -->
                     <div class="gallery-card">
                         <div class="gallery-image">
                             <img src="assets/images/students/ABHIINAND  SSC GD CISF.jpeg" alt="ABHIINAND">
@@ -347,6 +362,29 @@
                         </div>
                     </div>
 
+                    </div>
+                </div>
+
+                <!-- Media & News Tab Content -->
+                <div class="tab-content" id="media">
+                    <div class="gallery-grid">
+                        <!-- Random Placeholder Images for Media & News -->
+                        <div class="gallery-card">
+                            <div class="gallery-image">
+                                <img src="assets/images/news-1.jpeg" alt="News Coverage 1">
+                            </div>
+                        </div>
+                        <div class="gallery-card">
+                            <div class="gallery-image">
+                                <img src="assets/images/news-2.jpeg" alt="News Coverage 2">
+                            </div>
+                        </div>
+                        <div class="gallery-card">
+                            <div class="gallery-image">
+                                <img src="assets/images/news-3.jpeg" alt="News Coverage 3">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

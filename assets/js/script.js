@@ -221,4 +221,68 @@ document.addEventListener('DOMContentLoaded', () => {
         // Initialize fetch
         fetchNotifications();
     }
+
+    // Gallery Tabs Logic
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    if (tabBtns.length > 0 && tabContents.length > 0) {
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons and contents
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                // Show corresponding tab content
+                const tabId = btn.getAttribute('data-tab');
+                const targetContent = document.getElementById(tabId);
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                }
+            });
+        });
+    }
+
+    // News Ticker Logic
+    const fetchNewsTicker = async () => {
+        try {
+            const response = await fetch('https://api.tornadoes.co.in/api/news');
+            const data = await response.json();
+            
+            if (data && data.success && data.data && data.data.length > 0) {
+                const ticker = document.getElementById('newsTicker');
+                const tickerMove = document.getElementById('tickerMove');
+                
+                if (ticker && tickerMove) {
+                    let html = '';
+                    // Duplicate data to ensure marquee has enough content to scroll smoothly
+                    const displayData = [...data.data, ...data.data, ...data.data, ...data.data];
+                    
+                    displayData.forEach(item => {
+                        html += `
+                            <div class="ticker-item">
+                                <span class="job-title">${item.job_title}</span>
+                                <span class="description">- ${item.description}</span>
+                            </div>
+                        `;
+                    });
+                    
+                    tickerMove.innerHTML = html;
+                    ticker.style.display = 'flex';
+                    
+                    // Update header height variable for margins
+                    const header = document.querySelector('.header');
+                    if (header) {
+                        document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
+                    }
+                }
+            }
+        } catch (error) {
+            console.error('Error fetching news ticker:', error);
+        }
+    };
+    fetchNewsTicker();
 });
